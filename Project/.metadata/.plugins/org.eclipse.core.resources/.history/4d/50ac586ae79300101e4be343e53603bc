@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8d404c87-cad0-46f4-9830-2387daa6d1ab">
+  <producedTypes>
+    <objectType typeId="fb26d2ca-4e96-4487-8eee-f7bbf3ef3c8e" valueTypeId="01790dc1-e87d-4367-976a-fc4dcc5a5a3c"/>
+    <refType typeId="abc6bf52-4c09-4868-937d-6f3874838d23" valueTypeId="c3665a81-c02c-417a-9ad3-ecc5e7e50fcb"/>
+    <selectionType typeId="9286424a-b064-4942-a1c2-d1e2971a1e27" valueTypeId="1efe247f-d802-4953-b61c-18ed7c8ac639"/>
+    <listType typeId="27bcbde8-2302-483b-8880-fcc9766ee132" valueTypeId="6209165a-ae14-459e-ac9a-364178e2c9b5"/>
+    <managerType typeId="40a859e6-06e3-49b6-83dd-9145a122a305" valueTypeId="717e7f17-8730-4b33-b229-4c534b56fa98"/>
+  </producedTypes>
+  <name>Сотрудники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сотрудники</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Сотрудники.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Сотрудники.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>36</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="36aa7646-d169-4282-9703-dc90df8ea438">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <comment>Должность сотрудника</comment>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3f8ed085-eafe-4873-9f7b-4524b45cb447">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <comment>Человек, принятый на работу</comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="58561112-1cbb-463e-9d55-da519347d502">
+    <name>ПриемНаРаботу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прием на работу</value>
+    </synonym>
+    <comment>Факт принятия на работу</comment>
+    <type>
+      <types>DocumentRef.ПриемНаРаботу</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

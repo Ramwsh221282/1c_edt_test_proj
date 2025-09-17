@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Удалить ресурс &quot;Sam_Rab_Config&quot;" deleteContents="false" description="Удалить ресурс &quot;Sam_Rab_Config&quot;" element1="/Sam_Rab_Config" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1758117754748"/>
+</session>

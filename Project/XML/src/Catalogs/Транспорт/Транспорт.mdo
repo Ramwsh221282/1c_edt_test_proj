@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb600c3d-5215-43db-8c74-df4055b9d10a">
+  <producedTypes>
+    <objectType typeId="5642604f-b3c9-479b-a0ee-e0422836871b" valueTypeId="0b118799-9d7b-4120-878e-8a44fba25ef5"/>
+    <refType typeId="9dbeade1-f5f0-4cf5-a894-0c9f2b3c3c4c" valueTypeId="c76981f3-1f0e-4f4f-9abb-5fa12f6a9208"/>
+    <selectionType typeId="c75f6648-0d45-4f82-8eb0-137b0585217b" valueTypeId="09ab25e8-421a-4a94-8899-333d4e89e0fc"/>
+    <listType typeId="e8aac532-a8a9-4059-8bc5-3ac912461108" valueTypeId="c192f808-f17c-41ff-bb7f-27c716565971"/>
+    <managerType typeId="51442873-fc3e-4ad6-bc2a-d781265d0b13" valueTypeId="985c9c5d-196b-4bfe-bbef-72c70dfde287"/>
+  </producedTypes>
+  <name>Транспорт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Транспорт</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Транспорт.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Транспорт.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Парки</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Транспорт.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Транспорт.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="f18ff3d3-0d15-44a6-a4bb-14a94ed92e00">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыТранспорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="06cf9ab5-071e-499d-84ad-a418e82c6662">
+    <name>КемЗанят</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кем занят</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="46b4c6d8-3d49-4d9c-8391-1b04b0709e8c">
+    <name>ДатаБронирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата бронирования</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7dfa2e10-e492-4b6c-b5be-66cf7428956e">
+    <name>ДатаОсвобождения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата освобождения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c619e5e6-9c88-4c3b-bbef-1c8cc7282c44">
+    <name>Модель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модель</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="203fa580-3ac7-4785-a930-50797e4d24bf">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4ea46cd0-2d45-4457-bdf8-c1f00c76b69d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

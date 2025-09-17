@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="INFOBASE_ACCESS_SETTINGS_DIALOG">
+		<item key="DIALOG_WIDTH" value="1413"/>
+		<item key="DIALOG_HEIGHT" value="689"/>
+		<item key="DIALOG_X_ORIGIN" value="120"/>
+		<item key="DIALOG_Y_ORIGIN" value="134"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
+	</section>
+	<section name="INFOBASE_UPDATE_CONFIRM_DIALOG_SETTINGS">
+		<item key="DIALOG_WIDTH" value="1258"/>
+		<item key="DIALOG_HEIGHT" value="791"/>
+		<item key="DIALOG_X_ORIGIN" value="771"/>
+		<item key="DIALOG_Y_ORIGIN" value="511"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
+	</section>
+	<section name="exportDbConfigurationFilesHistory">
+		<item key="historyEntryCount" value="1"/>
+		<item key="historyEntry_0" value="C:\!WorkingDirectory\1C_Sam_Rab\CF_Last\Config.cf"/>
+	</section>
+	<section name="exportDbConfigurationInequalityWarnings">
+		<section name="371fa5e0-16b3-4a2a-becc-a46002bf80c0">
+			<item key="updateIb" value="true"/>
+		</section>
+	</section>
+	<section name="dumpFilesHistory">
+		<item key="historyEntryCount" value="1"/>
+		<item key="historyEntry_0" value="C:\!WorkingDirectory\1C_Sam_Rab\DT_Last\Db.dt"/>
+	</section>
+</section>

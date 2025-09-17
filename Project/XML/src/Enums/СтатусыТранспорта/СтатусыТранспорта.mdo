@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06739f03-6c16-4f92-bbf7-ca488d0eac06">
+  <producedTypes>
+    <refType typeId="4f082067-1a53-4964-8921-e523d068fc3c" valueTypeId="47f1a049-9308-4b10-a9bd-a9ed0786eb7f"/>
+    <listType typeId="4810f84f-dedd-421c-a117-dfef11d37162" valueTypeId="fd681cdc-0a36-4c60-a148-e88a1157fff8"/>
+    <managerType typeId="dc85a97d-ae4b-4eb2-8ae0-69e19ab51126" valueTypeId="37cefef6-89b6-4faa-afc1-e1f9cdb4a48a"/>
+  </producedTypes>
+  <name>СтатусыТранспорта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы транспорта</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3e5c3bbb-425f-4d1e-bece-e76c3c023afc">
+    <name>Занят</name>
+    <synonym>
+      <key>ru</key>
+      <value>Занят</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="54e120c9-d927-4b75-853b-adaa8baa70e2">
+    <name>Свободен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свободен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="99f1a666-3b2d-4503-8051-eeefa98f1b6e">
+    <name>ВРемонте</name>
+    <synonym>
+      <key>ru</key>
+      <value>В ремонте</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
