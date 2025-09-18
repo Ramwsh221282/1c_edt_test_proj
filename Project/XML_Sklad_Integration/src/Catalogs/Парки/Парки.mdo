@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eb2522f7-ae8f-4be8-a813-26b9fd81b4dd">
+  <producedTypes>
+    <objectType typeId="65b02bc4-1dee-4ec3-938b-589e79ad4275" valueTypeId="0fbf9412-061c-4399-ace7-0eb59da05e88"/>
+    <refType typeId="59b2ef0e-9b61-4813-97bc-c8bc26849113" valueTypeId="4766940d-3a73-4803-894a-0bfda1d230b7"/>
+    <selectionType typeId="94c41134-52e3-43ee-b461-2db97931e308" valueTypeId="b8d0c181-d5f9-449d-90e3-7bb6b312a45d"/>
+    <listType typeId="a420ae46-3690-4ba7-80e1-9842eb2e8c4e" valueTypeId="b3832efc-3c1c-4ab3-9283-a72de6610226"/>
+    <managerType typeId="fc83ed6c-f82a-45e7-b13c-9062815b72a4" valueTypeId="8d75bba8-6fec-4dea-8625-fb2f346ebf2d"/>
+  </producedTypes>
+  <name>Парки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Парки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Парки.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Парки.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Парк</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Парк</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Список парков транспорта</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Список парков транспорта</value>
+  </extendedListPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>36</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Парки.Form.ФормаПарка</defaultObjectForm>
+  <attributes uuid="caabdc66-204b-4e7a-8656-dcac54de0118">
+    <name>Адрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <comment>Адрес парка</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5f6ff683-cdf9-42e3-82fa-173c3dccd6c9">
+    <name>КоличествоТранспорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество транспорта</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7bf361da-0b53-46e0-a35a-9ef368b0d199">
+    <name>КоличествоТранспортаЗанятного</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество транспорта занятного</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5d22e38f-b997-4b39-af06-0b8828ad3223">
+    <name>КоличествоТранспортаСвободного</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество транспорта свободного</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="1cf53d54-1872-4759-b128-affd80dbf826">
+    <producedTypes>
+      <objectType typeId="c898234c-4a3e-4630-b9f1-b1ad504225ff" valueTypeId="40a9b8aa-1139-44a3-9cf7-103ee57b5c45"/>
+      <rowType typeId="29bdb6fe-7aaa-4d30-bc2a-b20f003bf00d" valueTypeId="83f6830f-b4b1-40fb-b700-09eb3e388679"/>
+    </producedTypes>
+    <name>ТранспортПарка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспорт парка</value>
+    </synonym>
+    <attributes uuid="43a956d0-dadb-4b07-949e-0e413c7fb070">
+      <name>Транспорт</name>
+      <synonym>
+        <key>ru</key>
+        <value>Транспорт</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Транспорт</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+  <forms uuid="4c572f7a-d281-41f3-907c-f156cf34d3a5">
+    <name>ФормаПарка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма парка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

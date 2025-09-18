@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="966548d6-2bd9-46cf-a2ae-56b663e9d7de">
+  <producedTypes>
+    <objectType typeId="1bced5b4-9b28-4da2-90ef-ae329f7f1d02" valueTypeId="7643a4c4-50a7-4ea7-9433-09c6a95d3407"/>
+    <refType typeId="627fa887-b135-4efc-82e0-fcb44e7a7355" valueTypeId="59ef4779-6024-4cf7-9c8d-0220036b2dcf"/>
+    <selectionType typeId="55bcb15e-135c-4b0d-af32-56700505c872" valueTypeId="445844f4-5e04-4164-9127-4a4cb2543bd7"/>
+    <listType typeId="ec0318ec-5fb8-4bcc-8173-08ea952601ac" valueTypeId="3278dda3-df2d-4fdc-a8e1-d4a70c0f3e8a"/>
+    <managerType typeId="84d02134-5c79-4bf4-afe9-d8f09704ffc1" valueTypeId="7476b0dd-f777-4aa5-8f5b-2c444d4da140"/>
+  </producedTypes>
+  <name>ПриемНаРаботу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прием на работу</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриемНаРаботу.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>36</numberLength>
+  <checkUnique>true</checkUnique>
+  <defaultObjectForm>Document.ПриемНаРаботу.Form.ФормаПриемаНаРаботу</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="84acc149-b691-44bc-8179-227623ec6d35">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <comment>Человек, принимаемый на работу</comment>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ff485869-02f6-4240-bbfe-c58cac552a31">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <comment>Должность</comment>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="9e767f4c-2ee8-481d-a246-f293a75a1cfe">
+    <name>ФормаПриемаНаРаботу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма приема на работу</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

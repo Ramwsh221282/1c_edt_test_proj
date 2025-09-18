@@ -2,8 +2,9 @@
 <section name="Workbench">
 	<section name="1C:Enterprise_Development_Tools_ImportConfigurationWizard">
 		<section name="dirSourcePaths">
-			<item key="historyEntryCount" value="1"/>
-			<item key="historyEntry_0" value="C:\!WorkingDirectory\1C_Sam_Rab\XML"/>
+			<item key="historyEntryCount" value="2"/>
+			<item key="historyEntry_0" value="C:\1c_edt_test_proj\XML_Sklad_Integration"/>
+			<item key="historyEntry_1" value="C:\!WorkingDirectory\1C_Sam_Rab\XML"/>
 		</section>
 		<section name="zipSourcePaths">
 		</section>
