@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>ChangeHistory</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Delete</ExcludedCommand>
+		<ExcludedCommand>Help</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>OpenFromMainServer</ExcludedCommand>
+		<ExcludedCommand>OpenFromStandaloneServer</ExcludedCommand>
+		<ExcludedCommand>Reread</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+		<ExcludedCommand>ShowInList</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
+		<ExcludedCommand>WriteAndClose</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<Enabled>false</Enabled>
+			<ReadOnly>true</ReadOnly>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Генерируется автоматически</v8:content>
+				</v8:item>
+			</ToolTip>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Генерируется автоматически</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+			<SelectedItemsActionsPanel name="КодПанельДействийВыделенныхСтрок" id="4"/>
+		</InputField>
+		<InputField name="Наименование" id="5">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="6"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="7"/>
+			<SelectedItemsActionsPanel name="НаименованиеПанельДействийВыделенныхСтрок" id="8"/>
+		</InputField>
+		<InputField name="Адрес" id="17">
+			<DataPath>Объект.Адрес</DataPath>
+			<ContextMenu name="АдресКонтекстноеМеню" id="18"/>
+			<ExtendedTooltip name="АдресРасширеннаяПодсказка" id="19"/>
+			<SelectedItemsActionsPanel name="АдресПанельДействийВыделенныхСтрок" id="20"/>
+		</InputField>
+		<LabelField name="КоличествоТовара" id="9">
+			<DataPath>Объект.КоличествоТовара</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КоличествоТовараКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="КоличествоТовараРасширеннаяПодсказка" id="11"/>
+			<SelectedItemsActionsPanel name="КоличествоТовараПанельДействийВыделенныхСтрок" id="12"/>
+		</LabelField>
+		<UsualGroup name="Действия" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Действия</v8:content>
+				</v8:item>
+			</Title>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ДействияРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<Button name="ДобавитьСклад" id="15">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ДобавитьСклад</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавить склад</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ДобавитьСкладРасширеннаяПодсказка" id="16"/>
+				</Button>
+				<Button name="СохранитьИзмененияТоваров" id="63">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СохранитьТоварыНаСкладе</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохранить изменения товаров</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СохранитьИзмененияТоваровРасширеннаяПодсказка" id="64"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТоварыНаСкладе" id="21">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТоварыНаСкладе</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТоварыНаСкладеКонтекстноеМеню" id="23"/>
+			<AutoCommandBar name="ТоварыНаСкладеКоманднаяПанель" id="22"/>
+			<ExtendedTooltip name="ТоварыНаСкладеРасширеннаяПодсказка" id="24"/>
+			<SearchStringAddition name="ТоварыНаСкладеСтрокаПоиска" id="25">
+				<AdditionSource>
+					<Item>ТоварыНаСкладе</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТоварыНаСкладеСтрокаПоискаКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="ТоварыНаСкладеСтрокаПоискаРасширеннаяПодсказка" id="27"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТоварыНаСкладеСостояниеПросмотра" id="31">
+				<AdditionSource>
+					<Item>ТоварыНаСкладе</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТоварыНаСкладеСостояниеПросмотраКонтекстноеМеню" id="32"/>
+				<ExtendedTooltip name="ТоварыНаСкладеСостояниеПросмотраРасширеннаяПодсказка" id="33"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТоварыНаСкладеУправлениеПоиском" id="28">
+				<AdditionSource>
+					<Item>ТоварыНаСкладе</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТоварыНаСкладеУправлениеПоискомКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="ТоварыНаСкладеУправлениеПоискомРасширеннаяПодсказка" id="30"/>
+			</SearchControlAddition>
+			<SelectedItemsActionsPanel name="ТоварыНаСкладеПанельДействийВыделенныхСтрок" id="34"/>
+			<ChildItems>
+				<InputField name="ТоварыНаСкладеНомерСтроки" id="35">
+					<DataPath>Объект.ТоварыНаСкладе.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТоварыНаСкладеНомерСтрокиКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТоварыНаСкладеНомерСтрокиРасширеннаяПодсказка" id="37"/>
+					<SelectedItemsActionsPanel name="ТоварыНаСкладеНомерСтрокиПанельДействийВыделенныхСтрок" id="38"/>
+				</InputField>
+				<InputField name="ТоварыНаСкладеТовар" id="39">
+					<DataPath>Объект.ТоварыНаСкладе.Товар</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТоварыНаСкладеТоварКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ТоварыНаСкладеТоварРасширеннаяПодсказка" id="41"/>
+					<SelectedItemsActionsPanel name="ТоварыНаСкладеТоварПанельДействийВыделенныхСтрок" id="42"/>
+				</InputField>
+				<InputField name="ТоварыНаСкладеЕдиницаИзмерения" id="43">
+					<DataPath>Объект.ТоварыНаСкладе.ЕдиницаИзмерения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТоварыНаСкладеЕдиницаИзмеренияКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ТоварыНаСкладеЕдиницаИзмеренияРасширеннаяПодсказка" id="45"/>
+					<SelectedItemsActionsPanel name="ТоварыНаСкладеЕдиницаИзмеренияПанельДействийВыделенныхСтрок" id="46"/>
+				</InputField>
+				<InputField name="ТоварыНаСкладеЦенаПокупки" id="47">
+					<DataPath>Объект.ТоварыНаСкладе.ЦенаПокупки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТоварыНаСкладеЦенаПокупкиКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ТоварыНаСкладеЦенаПокупкиРасширеннаяПодсказка" id="49"/>
+					<SelectedItemsActionsPanel name="ТоварыНаСкладеЦенаПокупкиПанельДействийВыделенныхСтрок" id="50"/>
+				</InputField>
+				<InputField name="ТоварыНаСкладеЦенаПродажи" id="51">
+					<DataPath>Объект.ТоварыНаСкладе.ЦенаПродажи</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТоварыНаСкладеЦенаПродажиКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ТоварыНаСкладеЦенаПродажиРасширеннаяПодсказка" id="53"/>
+					<SelectedItemsActionsPanel name="ТоварыНаСкладеЦенаПродажиПанельДействийВыделенныхСтрок" id="54"/>
+				</InputField>
+				<InputField name="ТоварыНаСкладеСпред" id="55">
+					<DataPath>Объект.ТоварыНаСкладе.Спред</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТоварыНаСкладеСпредКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ТоварыНаСкладеСпредРасширеннаяПодсказка" id="57"/>
+					<SelectedItemsActionsPanel name="ТоварыНаСкладеСпредПанельДействийВыделенныхСтрок" id="58"/>
+				</InputField>
+				<InputField name="ТоварыНаСкладеКоличество" id="59">
+					<DataPath>Объект.ТоварыНаСкладе.Количество</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ContextMenu name="ТоварыНаСкладеКоличествоКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ТоварыНаСкладеКоличествоРасширеннаяПодсказка" id="61"/>
+					<SelectedItemsActionsPanel name="ТоварыНаСкладеКоличествоПанельДействийВыделенныхСтрок" id="62"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Склады</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьСклад" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить склад</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ДобавитьСклад</Action>
+		</Command>
+		<Command name="СохранитьТоварыНаСкладе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить товары на складе</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СохранитьИзмененияТоваровНаСкладе</Action>
+		</Command>
+	</Commands>
+</Form>
